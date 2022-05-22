@@ -27,9 +27,33 @@
             button = document.getElementById("b1")
             num = Number(button.innerHTML) + 1
             button.innerHTML = num
-            if (num % 50 == 0){
+            if (num % 2560 == 0){
                 p1 = document.getElementById("p1")
-                p1.innerHTML += "<p style='color:red'>天哪，你点了五十个</p>"
+                p1.innerHTML += "<p style='color:purple'>你点了两千五百六十次！再往下，没有了。。。</p>"
+            }
+            else if(num % 1280 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:blue'>你一定是闲着没事才会开连点器！你点了一千二百八十次了！</p>"
+            }
+            else if(num % 640 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:cyan'>你是连点器吧？你竟然点了六百四十次！</p>"
+            }
+            else if(num % 320 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:green'>你也太闲了吧，点了三百二十次了！</p>"
+            }
+            else if(num % 160 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:yellow'>你一定是闲着没事才会点一百六十次！</p>"
+            }
+            else if (num % 80 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:orange'>天哪，你点了八十个</p>"
+            }
+            else if (num % 40 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:red'>真棒，又点了四十个</p>"
             }
             else if (num % 10 == 0){
                 p1 = document.getElementById("p1")
