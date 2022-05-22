@@ -22,6 +22,27 @@
     ">
         <h1>4n0n4me的垃圾场</h1>
         <p>这里都是垃圾。</p>
+        <script>
+        function like(){
+            button = document.getElementById("b1")
+            num = Number(button.innerHTML) + 1
+            button.innerHTML = num
+            if (num % 50 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p style='color:red'>天哪，你点了五十个</p>"
+            }
+            else if (num % 10 == 0){
+                p1 = document.getElementById("p1")
+                p1.innerHTML += "<p>真棒，又点了十个</p>"
+            }
+        }
+        </script>
+        <h2>JavaScript小玩具</h2>
+        <h3>点！↓</h3>
+        <button type="button" id="b1" onclick="like()">0</button>
+        <p id="p1">
+
+        </p>
     </div>
     <div style="
     background-color: #f1f1f1;
