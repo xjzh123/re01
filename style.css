@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 header {
     background-color: #f1f1f1;
     text-align: center;
@@ -6,8 +10,8 @@ header {
 
 main {
     max-width: 760px;
-    margin: 30px auto; /* 30px应用到上下，auto应用到左右 */
-    padding: 15px;
+    margin: auto; /* 30px应用到上下，auto应用到左右 */
+    padding: 15px 23px;
     line-height: 1.7;
 }
 

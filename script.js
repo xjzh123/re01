@@ -1,16 +1,21 @@
+let button = document.getElementById('clicker-button')
+let clicker = document.getElementById('clicker')
+
 let delta = location.search ?
     (
         isNaN(Number(location.search.slice(1))) ?
             1 : Number(location.search.slice(1))
     ) : 1
 
-function like() {
-    let button = document.getElementById('clicker-button')
+function clickerScroll() {
+    clicker.scrollHeight = clicker.clientHeight
+}
+
+function click() {
     let num = Number(button.innerHTML) + delta
 
     if (num <= 2561) {
         button.innerHTML = num
-        let clicker = document.getElementById('clicker')
         let span = document.createElement('span')
         let flag = true
 
@@ -44,7 +49,9 @@ function like() {
         }
 
         if (flag) {
-            span.innerHTML = '\n' + span.innerHTML
+            if (clicker.childElementCount != 0) {
+                clicker.appendChild(document.createElement('br'))
+            }
             clicker.appendChild(span)
         }
     } else {
@@ -52,3 +59,5 @@ function like() {
             '你点到头了！快看看你的战果吧！嗯，如果你没有看到1280次时的提示而是用手点的……'
     }
 }
+
+button.onclick = click
