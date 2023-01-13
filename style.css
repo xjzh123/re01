@@ -1,0 +1,30 @@
+header {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+}
+
+main {
+    max-width: 760px;
+    margin: 30px auto; /* 30px应用到上下，auto应用到左右 */
+    padding: 15px;
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+    font-size: small;
+}
+
+pre {
+    width: 100%;
+    background:#f1f1f1;
+    max-height: 10em;
+    overflow-y: auto;
+}
+
+code {
+    width: 100%;
+}

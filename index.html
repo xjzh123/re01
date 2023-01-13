@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>垃圾网页</title>
-    <script src="JavaScript/like.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body style="margin: 0;">
-    <div style="
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 40px;
-    ">
+
+<body>
+    <header>
         <img alt="图片加载失败" src="svg1.svg" width="120" height="120">
-    </div>
-    <div style="
-    max-width: 760px;
-    margin: 30px auto;
-    padding: 15px;
-    line-height: 1.7;
-    ">
+    </header>
+    <main>
         <h1>4n0n4me的垃圾场</h1>
         <p>这里都是垃圾。</p>
-        <h2>JavaScript小玩具</h2>
-        <h3>点！↓</h3>
-        <button type="button" id="b1" onclick="like()">0</button>
-        <p id="p1"></p>
+        <hr>
+        <h2>链接们</h2>
+        <ul>
+            <li>
+                <a href="https://hcwiki.github.io">我的HCwiki</a>
+            </li>
+            <li>
+                <a href="https://paperee.tk">纸片君ee的主页</a>
+            </li>
+            <li>
+                <a href="https://textboard.xjzh123.repl.co">Textboard</a>
+            </li>
+        </ul>
+        <hr>
         <h2>JavaScript小工具</h2>
         <h3>加点字自动加点器</h3>
         <a href="../jdz">链接</a>
-        <h2>友情链接</h2>
-        <a href="https://paperee.tk">纸片君ee的主页</a>
-        <a href="https://hcwiki.github.io">我的HCwiki</a>
-    </div>
-    <div style="
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 40px;
-    font-size: small;
-    ">
+        <h3>去除HC拜年纪点赞按钮</h3>
+        <p>
+            <a href="javascript:(function()%7Bdocument.querySelector('.goodBtn').style.display%3D'none'%7D)()">去除点赞</a>
+        </p>
+        <p>↑拖动这个链接到浏览器书签栏，在HC拜年纪页面点击这个书签即可</p>
+        <hr>
+        <h2>JavaScript小玩具</h2>
+        <h3>点！↓</h3>
+        <button type="button" id="clicker-button" onclick="like()">0</button>
+        <pre><code id="clicker"></code></pre>
+    </main>
+    <footer>
         <p>本站为纯纯的垃圾。</p>
-    </div>
+    </footer>
 </body>
+
 </html>
